@@ -1,0 +1,16 @@
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `CRM_MEMBER`
+-- ----------------------------
+DROP TABLE IF EXISTS `CRM_MEMBER`;
+CREATE TABLE `CRM_MEMBER` (
+ 		`MEMBER_ID` varchar(100) NOT NULL,
+		`MEMBER_NUM` varchar(20) DEFAULT NULL COMMENT '会员卡号',
+		`ENTERPRISE_NAME` varchar(100) DEFAULT NULL COMMENT '企业名称',
+		`CONTACT_PHONE` varchar(20) DEFAULT NULL COMMENT '联系电话',
+		`ENTERPRISE_ADDRESS` varchar(100) DEFAULT NULL COMMENT '企业地址',
+		`RECRUIT_CNT` int(5) NOT NULL COMMENT '招聘次数',
+  		PRIMARY KEY (`MEMBER_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
