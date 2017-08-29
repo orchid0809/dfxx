@@ -612,9 +612,9 @@
                     <failOnError>true</failOnError>
                     <showDeprecation>true</showDeprecation>
                     <showWarnings>true</showWarnings>
-                    <!--<compilerArguments>
+                    <compilerArguments>
                         <bootclasspath>${java.home}/lib/rt.jar;${java.home}/lib/jce.jar</bootclasspath>
-                    </compilerArguments>-->
+                    </compilerArguments>
                 </configuration>
             </plugin>
 
