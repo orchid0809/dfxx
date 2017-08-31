@@ -2,148 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c363a497-fcb3-48ae-a125-13ad0ab484db" name="Default" comment="pom.xml">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/common/CModelAndView.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/common/CModelAndView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/common/HttpInclude$CustomOutputHttpServletResponseWrapper$1.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/common/HttpInclude$CustomOutputHttpServletResponseWrapper$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/common/HttpInclude$CustomOutputHttpServletResponseWrapper.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/common/HttpInclude$CustomOutputHttpServletResponseWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/common/HttpInclude$Utils.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/common/HttpInclude$Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/common/HttpInclude.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/common/HttpInclude.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/fhdb/brdb/BRdbController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/fhdb/brdb/BRdbController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/fhdb/sqledit/SQLeditController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/fhdb/sqledit/SQLeditController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/fhdb/timingbackup/TimingBackUpController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/fhdb/timingbackup/TimingBackUpController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/fhoa/department/DepartmentController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/fhoa/department/DepartmentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/information/attached/AttachedController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/information/attached/AttachedController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/information/attachedmx/AttachedMxController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/information/attachedmx/AttachedMxController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/information/pictures/PicturesController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/information/pictures/PicturesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/member/member/MemberController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/member/member/MemberController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/mobile/IndexMobileController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/mobile/IndexMobileController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/mobile/RentalMobileController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/mobile/RentalMobileController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/mobile/TalentsMobileController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/mobile/TalentsMobileController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/recruit/recruit/RecruitController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/recruit/recruit/RecruitController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/rental/rental/RentalController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/rental/rental/RentalController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/appuser/AppuserController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/appuser/AppuserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/buttonrights/ButtonrightsController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/buttonrights/ButtonrightsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/dictionaries/DictionariesController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/dictionaries/DictionariesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/fhbutton/FhbuttonController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/fhbutton/FhbuttonController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/fhsms/FhsmsController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/fhsms/FhsmsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/head/HeadController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/head/HeadController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/login/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/login/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/menu/MenuController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/menu/MenuController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/onlinemanager/OnlineManagerController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/onlinemanager/OnlineManagerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/secCode/SecCodeController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/secCode/SecCodeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/tools/ToolController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/tools/ToolController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/system/user/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/system/user/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/talents/talents/TalentsController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/talents/talents/TalentsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/WeixinController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/WeixinController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/WeixinController$2.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/WeixinController$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/WeixinController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/WeixinController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/command/CommandController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/command/CommandController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/imgmsg/ImgmsgController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/imgmsg/ImgmsgController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/textmsg/TextmsgController.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/controller/weixin/textmsg/TextmsgController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/filter/startFilter$1.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/filter/startFilter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/filter/startFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/filter/startFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/interceptor/LoginHandlerInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/interceptor/LoginHandlerInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/plugin/PagePlugin.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/plugin/PagePlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/plugin/websocketInstantMsg/ChatServerPool.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/plugin/websocketInstantMsg/ChatServerPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/plugin/websocketOnline/OnlineChatServerPool.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/plugin/websocketOnline/OnlineChatServerPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/service/fhoa/department/impl/DepartmentService.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/service/fhoa/department/impl/DepartmentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/service/system/dictionaries/impl/DictionariesService.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/service/system/dictionaries/impl/DictionariesService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/service/system/menu/impl/MenuService.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/service/system/menu/impl/MenuService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/AppUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/AppUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/CommUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/CommUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/DateUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/DateUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/DbFH$DbBackUpCallable.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/DbFH$DbBackUpCallable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/DbFH$DbRecoverCallable.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/DbFH$DbRecoverCallable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/DbFH.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/DbFH.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/FileUpload.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/FileUpload.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/FileUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/FileUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/GetWeb.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/GetWeb.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/JPushClientUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/JPushClientUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/Jurisdiction.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/Jurisdiction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/LatLonUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/LatLonUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/MapDistance.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/MapDistance.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/ObjectExcelView.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/ObjectExcelView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/PathUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/PathUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/QuartzManager.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/QuartzManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/ReflectHelper.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/ReflectHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/SmsUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/SmsUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/Uploader.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/Uploader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/Watermark.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/Watermark.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fh/util/mail/SimpleMailSender.class" afterPath="$PROJECT_DIR$/target/classes/com/fh/util/mail/SimpleMailSender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm.war" afterPath="$PROJECT_DIR$/target/crm.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/CModelAndView.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/CModelAndView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/HttpInclude$CustomOutputHttpServletResponseWrapper$1.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/HttpInclude$CustomOutputHttpServletResponseWrapper$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/HttpInclude$CustomOutputHttpServletResponseWrapper.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/HttpInclude$CustomOutputHttpServletResponseWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/HttpInclude$Utils.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/HttpInclude$Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/HttpInclude.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/common/HttpInclude.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/fhdb/brdb/BRdbController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/fhdb/brdb/BRdbController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/fhdb/sqledit/SQLeditController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/fhdb/sqledit/SQLeditController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/fhdb/timingbackup/TimingBackUpController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/fhdb/timingbackup/TimingBackUpController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/fhoa/department/DepartmentController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/fhoa/department/DepartmentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/information/attached/AttachedController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/information/attached/AttachedController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/information/attachedmx/AttachedMxController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/information/attachedmx/AttachedMxController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/information/pictures/PicturesController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/information/pictures/PicturesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/member/member/MemberController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/member/member/MemberController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/mobile/IndexMobileController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/mobile/IndexMobileController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/mobile/RentalMobileController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/mobile/RentalMobileController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/mobile/TalentsMobileController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/mobile/TalentsMobileController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/recruit/recruit/RecruitController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/recruit/recruit/RecruitController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/rental/rental/RentalController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/rental/rental/RentalController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/appuser/AppuserController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/appuser/AppuserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/buttonrights/ButtonrightsController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/buttonrights/ButtonrightsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/dictionaries/DictionariesController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/dictionaries/DictionariesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/fhbutton/FhbuttonController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/fhbutton/FhbuttonController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/fhsms/FhsmsController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/fhsms/FhsmsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/head/HeadController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/head/HeadController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/login/LoginController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/login/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/menu/MenuController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/menu/MenuController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/onlinemanager/OnlineManagerController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/onlinemanager/OnlineManagerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/secCode/SecCodeController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/secCode/SecCodeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/tools/ToolController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/tools/ToolController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/user/UserController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/system/user/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/talents/talents/TalentsController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/talents/talents/TalentsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/WeixinController$1.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/WeixinController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/WeixinController$2.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/WeixinController$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/WeixinController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/WeixinController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/command/CommandController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/command/CommandController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/imgmsg/ImgmsgController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/imgmsg/ImgmsgController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/textmsg/TextmsgController.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/controller/weixin/textmsg/TextmsgController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/filter/startFilter$1.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/filter/startFilter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/filter/startFilter.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/filter/startFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/interceptor/LoginHandlerInterceptor.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/interceptor/LoginHandlerInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/plugin/PagePlugin.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/plugin/PagePlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/plugin/websocketInstantMsg/ChatServerPool.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/plugin/websocketInstantMsg/ChatServerPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/plugin/websocketOnline/OnlineChatServerPool.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/plugin/websocketOnline/OnlineChatServerPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/service/fhoa/department/impl/DepartmentService.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/service/fhoa/department/impl/DepartmentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/service/system/dictionaries/impl/DictionariesService.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/service/system/dictionaries/impl/DictionariesService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/service/system/menu/impl/MenuService.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/service/system/menu/impl/MenuService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/AppUtil.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/AppUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/CommUtil.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/CommUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/DateUtil.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/DateUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/DbFH$DbBackUpCallable.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/DbFH$DbBackUpCallable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/DbFH$DbRecoverCallable.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/DbFH$DbRecoverCallable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/DbFH.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/DbFH.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/FileUpload.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/FileUpload.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/FileUtil.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/FileUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/GetWeb.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/GetWeb.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/JPushClientUtil.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/JPushClientUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/Jurisdiction.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/Jurisdiction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/LatLonUtil.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/LatLonUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/MapDistance.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/MapDistance.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/ObjectExcelView.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/ObjectExcelView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/PathUtil.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/PathUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/QuartzManager.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/QuartzManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/ReflectHelper.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/ReflectHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/SmsUtil.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/SmsUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/Uploader.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/Uploader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/Watermark.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/Watermark.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/mail/SimpleMailSender.class" afterPath="$PROJECT_DIR$/target/crm/WEB-INF/classes/com/fh/util/mail/SimpleMailSender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="crm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -190,7 +49,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mobile/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.45454547">
+            <state vertical-scroll-proportion="0.0">
               <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
               <folding />
             </state>
@@ -200,7 +59,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34201956">
+            <state vertical-scroll-proportion="1.0260587">
               <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
@@ -222,9 +81,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -454,6 +311,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -756,7 +614,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -1493,7 +1350,8 @@
       <workItem from="1503988424545" duration="3336000" />
       <workItem from="1504059081646" duration="1734000" />
       <workItem from="1504141914466" duration="9148000" />
-      <workItem from="1504168045333" duration="1208000" />
+      <workItem from="1504168045333" duration="1911000" />
+      <workItem from="1504191062286" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="pom.xml">
       <created>1503994436684</created>
@@ -1523,7 +1381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250014000" />
+    <option name="totallyTimeSpent" value="250743000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1536,7 +1394,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="6" width="1924" height="1032" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1549,7 +1407,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33174792" sideWeight="0.487055" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.50214136" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2599784" sideWeight="0.48121646" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26321468" sideWeight="0.48121646" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25080907" sideWeight="0.51121604" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2669903" sideWeight="0.51878357" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1965,9 +1823,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1989,7 +1845,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mobile/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.45454547">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
           <folding />
         </state>
@@ -1997,7 +1853,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34201956">
+        <state vertical-scroll-proportion="1.0260587">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
