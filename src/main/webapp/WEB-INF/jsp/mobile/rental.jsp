@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -115,7 +116,15 @@
 									<td width="40" class="show5 x"><span
 											class="Hong74 FontSize14">${var.TYPE == 0? "出租":"出售"}</span>
 									</td>
-									<td class="show5 x" style="text-overflow:ellipsis"><a href="/LeaseShow.do?ID=3144&K=&P=1">${var.INFO_CONTENT}</a>
+									<td class="show5 x" style="text-overflow:ellipsis"><a href="/LeaseShow.do?ID=3144&K=&P=1">
+										<c:if test="${fn:length(var.INFO_CONTENT) > 32}">
+											${fn:substring(var.INFO_CONTENT, 0, 32)}......
+										</c:if>
+										<c:if test="${fn:length(var.INFO_CONTENT) <= 32}">
+											${var.INFO_CONTENT}
+										</c:if>
+
+										 </a>
 									</td>
 									<td width="40" class="show5 x"><span class="Hui99 FontSize14">${var.PUBLISH_TIME}</span>
 									</td>

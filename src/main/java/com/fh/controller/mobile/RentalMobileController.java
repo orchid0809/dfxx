@@ -1,5 +1,6 @@
 package com.fh.controller.mobile;
 
+import com.fh.common.HTMLSpirit;
 import com.fh.controller.base.BaseController;
 import com.fh.entity.Page;
 import com.fh.service.rental.rental.RentalManager;
@@ -53,6 +54,10 @@ public class RentalMobileController extends BaseController {
 		page.setPd(pd);
 		page.setShowCount(5);
 		List<PageData>	varList = rentalService.list(page);	//列出Rental列表
+		for(PageData data : varList){
+			data.put("INFO_CONTENT", HTMLSpirit.delHTMLTag((String)data.get("INFO_CONTENT")));
+
+		}
 		mv.setViewName("mobile/rental");
 		mv.addObject("varList", varList);
 		mv.addObject("pd", pd);

@@ -1,4 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -85,7 +87,7 @@
 
 	<div class="Box">
 		<div class="BoxContent">
-			<form action="/Searchfor.do" method="post" name="TopSS" id="TopSS">
+			<%--<form action="/Searchfor.do" method="post" name="TopSS" id="TopSS">
 				<div class="SearchK">
 					<script type="text/javascript" src="/Js/jquery-1.4.1.min.js"></script>
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -114,10 +116,7 @@
 				<div>
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
 						<tr>
-							<td width="50%"><div class="Right3">
-									<a href="/InfoAdd.do?PID=2" class="Submit2">发布信息</a>
-								</div>
-							</td>
+
 							<td width="50%"><div class="Left3">
 									<input name="InSS" type="submit" class="Submit1" id="InSS"
 										value="提交搜索" />
@@ -126,7 +125,7 @@
 						</tr>
 					</table>
 				</div>
-			</form>
+			</form>--%>
 			<div class="clear10 x"></div>
 			<div class="clear10"></div>
 			<div class="WXIndex">
@@ -203,188 +202,106 @@
 			<div class="Title1">推荐招聘</div>
 			<div>
 				<table width="100%" border="0" cellspacing="0" cellpadding="0">
-					<tr
-						onClick="window.location.href='/JobShow.do?ID=140813';return false">
-						<td class="show5 x">普工 <span class="Hui99">/</span> 1名<br />
-						<span class="Hui99 FontSize12">雕花厂</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-18</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/JobShow.do?ID=140812';return false">
-						<td class="show5 x">打花磨学徒 <span class="Hui99">/</span> 1名<br />
-						<span class="Hui99 FontSize12">雕花厂</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-18</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/JobShow.do?ID=140811';return false">
-						<td class="show5 x">电脑雕花操机学徒 <span class="Hui99">/</span> 1名<br />
-						<span class="Hui99 FontSize12">雕花厂</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-18</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/JobShow.do?ID=140809';return false">
-						<td class="show5 x">熟手木工 <span class="Hui99">/</span> 2名<br />
-						<span class="Hui99 FontSize12">诚招</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-18</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/JobShow.do?ID=139939';return false">
-						<td class="show5 x">另招：文员 <span class="Hui99">/</span> 2名<br />
-						<span class="Hui99 FontSize12">诚招</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-09</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
+					<c:choose>
+						<c:when test="${not empty varList}">
+							<c:forEach items="${varList}" var="var" varStatus="vs">
+
+								<c:forEach items="${var.recInfo}" var="recInfo">
+									<tr
+											onClick="window.location.href='<%=basePath%>recruit_mobile/detail?id=${var.RECRUIT_ID}&infoId=${recInfo.RECRUITINFO_ID}';return false">
+										<td class="show5 x"><a href="/JobShow.do?ID=141329&K=&P=1">${recInfo.RECRUIT_POSITION}
+											<span class="Hui99">/</span>${recInfo.RECRUIT_CNT} <span class="Hui99">/</span>
+												${recInfo.POSITION_REQUIRE}</a><br />
+											<span class="Hui99 FontSize12">${var.ENTERPRISE_NAME}</span>
+										</td>
+										<td width="40" class="show5 x"><span class="Hui99 FontSize14">${var.PUBLISH_TIME}</span>
+										</td>
+										<td width="10" class="show5 x"><img src="Images/ICON2.png"
+																			width="10" height="10" />
+										</td>
+									</tr>
+
+								</c:forEach>
+
+							</c:forEach>
+
+						</c:when>
+						<c:otherwise>
+							<tr class="main_info">
+								<td colspan="100" class="center" >没有相关数据</td>
+							</tr>
+						</c:otherwise>
+					</c:choose>
 				</table>
 			</div>
 			<div class="clear10"></div>
 			<div class="Title1">推荐租赁</div>
 			<div>
 				<table width="100%" border="0" cellspacing="0" cellpadding="0">
-					<tr
-						onClick="window.location.href='/LeaseShow.do?ID=3121';return false">
-						<td width="40" class="show5 x"><span
-							class="Hong74 FontSize14">[出租]</span>
-						</td>
-						<td class="show5 x">三期2栋前排12号靠中间过道三分之一出租。……</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-07</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/LeaseShow.do?ID=3118';return false">
-						<td width="40" class="show5 x"><span
-							class="Hong74 FontSize14">[出租]</span>
-						</td>
-						<td class="show5 x">有框架三层半厂房出租或转让，面积800平米，适合做……</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-05</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/LeaseShow.do?ID=3113';return false">
-						<td width="40" class="show5 x"><span
-							class="Hong74 FontSize14">[出租]</span>
-						</td>
-						<td class="show5 x">位于龙岭家具产业园，三楼、有货梯、面积2750平米……</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-04</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/LeaseShow.do?ID=3112';return false">
-						<td width="40" class="show5 x"><span
-							class="Hong74 FontSize14">[出租]</span>
-						</td>
-						<td class="show5 x">位于新消防队对面进200米（朱边路口）厂房面积55……</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-04</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/LeaseShow.do?ID=3092';return false">
-						<td width="40" class="show5 x"><span
-							class="Hong74 FontSize14">[出租]</span>
-						</td>
-						<td class="show5 x">位于323国道新四眼桥附近，面积1900平米，另有……</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">06-19</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
+					<c:choose>
+						<c:when test="${not empty rentals}">
+							<c:forEach items="${rentals}" var="var" varStatus="vs">
+								<tr
+										onClick="window.location.href='<%=basePath%>rental_mobile/detail?RENTAL_ID=${var.RENTAL_ID}';return false">
+									<td width="40" class="show5 x"><span
+											class="Hong74 FontSize14">${var.TYPE == 0? "出租":"出售"}</span>
+									</td>
+									<td class="show5 x" style="text-overflow:ellipsis"><a href="/LeaseShow.do?ID=3144&K=&P=1">
+										<c:if test="${fn:length(var.INFO_CONTENT) > 32}">
+											${fn:substring(var.INFO_CONTENT, 0, 32)}......
+										</c:if>
+										<c:if test="${fn:length(var.INFO_CONTENT) <= 32}">
+											${var.INFO_CONTENT}
+										</c:if>
+
+									</a>
+									</td>
+									<td width="40" class="show5 x"><span class="Hui99 FontSize14">${var.PUBLISH_TIME}</span>
+									</td>
+									<td width="10" class="show5 x"><img src="Images/ICON2.png"
+																		width="10" height="10" />
+									</td>
+								</tr>
+
+							</c:forEach>
+
+						</c:when>
+						<c:otherwise>
+							<tr class="main_info">
+								<td colspan="100" class="center" >没有相关数据</td>
+							</tr>
+						</c:otherwise>
+					</c:choose>
 				</table>
 			</div>
 			<div class="clear10"></div>
 			<div class="Title1">推荐人才</div>
 			<div>
 				<table width="100%" border="0" cellspacing="0" cellpadding="0">
-					<tr
-						onClick="window.location.href='/ResumeShow.do?ID=9189';return false">
-						<td class="show5 x">出榫打眼2人<br />
-						<span class="Hui99 FontSize12">男 / 28 / 2年</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-11</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/ResumeShow.do?ID=9182';return false">
-						<td class="show5 x">打齿、四面刨<br />
-						<span class="Hui99 FontSize12">男 / 40 / 7年</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-08</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/ResumeShow.do?ID=9177';return false">
-						<td class="show5 x">橡木床底油<br />
-						<span class="Hui99 FontSize12">男 / 38 / 6年</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">07-06</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/ResumeShow.do?ID=9143';return false">
-						<td class="show5 x">雕花学徒，排钻学徒<br />
-						<span class="Hui99 FontSize12">男 / 21 / 3年</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">06-18</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
-					<tr
-						onClick="window.location.href='/ResumeShow.do?ID=9140';return false">
-						<td class="show5 x">夫妻找在南康家具厂上班工作，打包或其它什么工种学徒都可<br />
-						<span class="Hui99 FontSize12">男 / 30多 / 3年</span>
-						</td>
-						<td width="40" class="show5 x"><span class="Hui99 FontSize14">06-18</span>
-						</td>
-						<td width="10" class="show5 x"><img src="Images/ICON2.png"
-							width="10" height="10" />
-						</td>
-					</tr>
+					<c:choose>
+						<c:when test="${not empty talents}">
+							<c:forEach items="${talents}" var="var" varStatus="vs">
+								<tr
+										onClick="window.location.href='<%=basePath%>talents_mobile/detail?TALENTS_ID=${var.TALENTS_ID}';return false">
+									<td class="show5 x">${var.JOB_INTENSION}<br />
+										<span class="Hui99 FontSize12">${var.SEX==0?'男':'女'} / ${var.WORKING_TIME}</span>
+									</td>
+									<td width="40" class="show5 x"><span class="Hui99 FontSize14"><fmt:formatDate  value="${var.CREATE_DATE}" pattern="MM-dd"/></span>
+									</td>
+									<td width="10" class="show5 x"><img src="Images/ICON2.png"
+																		width="10" height="10" />
+									</td>
+								</tr>
+
+							</c:forEach>
+
+						</c:when>
+						<c:otherwise>
+							<tr class="main_info">
+								<td colspan="100" class="center" >没有相关数据</td>
+							</tr>
+						</c:otherwise>
+					</c:choose>
 				</table>
 			</div>
 		</div>

@@ -31,6 +31,14 @@ import java.util.*;
 public class IndexMobileController extends BaseController {
 	
 
+	@Autowired
+	private  RecruitMobileController recruitMobileController;
+
+	@Autowired
+	private RentalMobileController rentalMobileController;
+
+	@Autowired
+	private TalentsMobileController talentsMobileController;
 	/**列表
 	 * @param page
 	 * @throws Exception
@@ -41,6 +49,11 @@ public class IndexMobileController extends BaseController {
 		ModelAndView mv = this.getModelAndView();
 		PageData pd = new PageData();
 		pd = this.getPageData();
+
+		mv = recruitMobileController.list(page,null);
+		mv.addObject("rentals",rentalMobileController.list(page).getModelMap().get("varList"));
+		mv.addObject("talents",talentsMobileController.list(page).getModelMap().get("varList"));
+
 		mv.setViewName("mobile/index");
 		return mv;
 	}
