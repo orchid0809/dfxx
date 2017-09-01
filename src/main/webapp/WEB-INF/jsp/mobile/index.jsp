@@ -13,10 +13,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>南康人才,南康江厦人才网,江厦人才网，江厦信息部 - 南康江厦人才网</title>
-<meta name="keywords" content="南康人才,南康江厦人才网,江厦人才网，江厦信息部" />
+<title>德方人才,南康德方人才网,德方人才网，德方信息部 - 南康德方人才网</title>
+<meta name="keywords" content="德方人才,南康德方人才网,德方人才网，德方信息部" />
 <meta name="description"
-	content="南康江厦人才网是南康江厦人力资源服务有限公司旗下的大型门户网站。服务于广大南康人才及南康家具企业。" />
+	content="南康德方人才网是南康德方人力资源服务有限公司旗下的大型门户网站。服务于广大南康人才及南康家具企业。" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <!--隐藏手机默认菜单-->
