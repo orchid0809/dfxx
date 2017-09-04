@@ -125,12 +125,20 @@
 				<value>
 				/recruit/recruit_print				= anon
 				/rental/rental_print				= anon
+				/mobile/index              = anon
+				/recruit_mobile/list		 	 =anon
+					/recruit_mobile/detail		 	 =anon
+					/rental_mobile/list		 	 =anon
+					/rental_mobile/detail		 	 =anon
+					/talents_mobile/list		 	 =anon
+					/talents_mobile/detail		 	 =anon
 				/rental/print				= anon
 				/static/ace/** 			= anon
 				/static/login/** 			= anon
 				/static/images/**			= anon
 				/static/js/myjs/** 			= authc
 				/static/js/** 				= anon
+				/static/mobile/**           =anon
 				/uploadFiles/uploadImgs/** 	= anon
 	           	/code.do 					= anon
 	           	/login_login	 			= anon

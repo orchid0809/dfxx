@@ -52,7 +52,7 @@ public class RecruitMobileController extends BaseController {
 	 */
 	@RequestMapping(value="/list")
 	public ModelAndView list(Page page,RecruitSearchParam param) throws Exception{
-		logBefore(logger, Jurisdiction.getUsername()+"列表Recruit");
+		//logBefore(logger, Jurisdiction.getUsername()+"列表Recruit");
 		//if(!Jurisdiction.buttonJurisdiction(menuUrl, "cha")){return null;} //校验权限(无权查看时页面会有提示,如果不注释掉这句代码就无法进入列表页面,所以根据情况是否加入本句代码)
 		ModelAndView mv = this.getModelAndView();
 		PageData pd = new PageData();
@@ -92,7 +92,7 @@ public class RecruitMobileController extends BaseController {
 		mv.addObject("varList", varList);
 		mv.addObject("pd", pd);
 		mv.addObject("page", page);
-		mv.addObject("QX",Jurisdiction.getHC());	//按钮权限
+		//mv.addObject("QX",Jurisdiction.getHC());	//按钮权限
 		System.out.println("flag:"+pd.getString("flag"));
 		mv.addObject("flag",pd.getString("flag"));
 		return mv;
