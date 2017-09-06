@@ -1,40 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="MemberMapper">
+<mapper namespace="HotpositionMapper">
 	
 	<!--表名 -->
 	<sql id="tableName">
-		CRM_MEMBER
+		"CRM_HOPPOSITIONHOTPOSITION"
 	</sql>
 	
 	<!-- 字段 -->
 	<sql id="Field">
-		MEMBER_NUM,	
-		ENTERPRISE_NAME,	
-		CONTACT_PHONE,	
-		ENTERPRISE_ADDRESS,	
-		RECRUIT_CNT,	
-		MEMBER_ID
+		"HOTNAME",	
+		"HOTPOSITION_ID"
 	</sql>
 	
 	<!-- 字段值 -->
 	<sql id="FieldValue">
-		#{MEMBER_NUM},	
-		#{ENTERPRISE_NAME},	
-		#{CONTACT_PHONE},	
-		#{ENTERPRISE_ADDRESS},	
-		#{RECRUIT_CNT},	
-		#{MEMBER_ID}
+			#{HOTNAME},	
+			#{HOTPOSITION_ID}
 	</sql>
 	
 	<!-- 新增-->
 	<insert id="save" parameterType="pd">
-		insert into 
-	<include refid="tableName"></include>
+		insert into
+		<include refid="tableName"></include>
 		(
-	<include refid="Field"></include>
+		<include refid="Field"></include>
 		) values (
-	<include refid="FieldValue"></include>
+		<include refid="FieldValue"></include>
 		)
 	</insert>
 	
@@ -43,22 +35,18 @@
 		delete from
 		<include refid="tableName"></include>
 		where 
-			MEMBER_ID = #{MEMBER_ID}
+			"HOTPOSITION_ID" = #{HOTPOSITION_ID}
 	</delete>
 	
 	<!-- 修改 -->
 	<update id="edit" parameterType="pd">
 		update
 		<include refid="tableName"></include>
-		set 
-			MEMBER_NUM = #{MEMBER_NUM},
-			ENTERPRISE_NAME = #{ENTERPRISE_NAME},
-			CONTACT_PHONE = #{CONTACT_PHONE},
-			ENTERPRISE_ADDRESS = #{ENTERPRISE_ADDRESS},
-			RECRUIT_CNT = #{RECRUIT_CNT},
-		MEMBER_ID = MEMBER_ID
-		where 
-		MEMBER_ID = #{MEMBER_ID}
+			set 
+				"HOTNAME" = #{HOTNAME},	
+			"HOTPOSITION_ID" = "HOTPOSITION_ID"
+			where 
+				"HOTPOSITION_ID" = #{HOTPOSITION_ID}
 	</update>
 	
 	<!-- 通过ID获取数据 -->
@@ -68,7 +56,7 @@
 		from 
 		<include refid="tableName"></include>
 		where 
-			MEMBER_ID = #{MEMBER_ID}
+			"HOTPOSITION_ID" = #{HOTPOSITION_ID}
 	</select>
 	
 	<!-- 列表 -->
@@ -103,7 +91,7 @@
 		delete from
 		<include refid="tableName"></include>
 		where 
-			MEMBER_ID in
+			"HOTPOSITION_ID" in
 		<foreach item="item" index="index" collection="array" open="(" separator="," close=")">
                  #{item}
 		</foreach>

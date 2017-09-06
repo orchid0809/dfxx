@@ -31,7 +31,7 @@
 						<div class="col-xs-12">
 							
 						<!-- 检索  -->
-						<form action="member/list.do" method="post" name="Form" id="Form">
+						<form action="hotposition/list.do" method="post" name="Form" id="Form">
 						<table style="margin-top:5px;">
 							<tr>
 								<td>
@@ -67,11 +67,7 @@
 									<label class="pos-rel"><input type="checkbox" class="ace" id="zcheckbox" /><span class="lbl"></span></label>
 									</th>
 									<th class="center" style="width:50px;">序号</th>
-									<th class="center">会员卡号</th>
-									<th class="center">企业名称</th>
-									<th class="center">联系电话</th>
-									<th class="center">企业地址</th>
-									<th class="center">招聘次数</th>
+									<th class="center">热门职位</th>
 									<th class="center">操作</th>
 								</tr>
 							</thead>
@@ -84,26 +80,22 @@
 									<c:forEach items="${varList}" var="var" varStatus="vs">
 										<tr>
 											<td class='center'>
-												<label class="pos-rel"><input type='checkbox' name='ids' value="${var.MEMBER_ID}" class="ace" /><span class="lbl"></span></label>
+												<label class="pos-rel"><input type='checkbox' name='ids' value="${var.HOTPOSITION_ID}" class="ace" /><span class="lbl"></span></label>
 											</td>
 											<td class='center' style="width: 30px;">${vs.index+1}</td>
-											<td class='center'>${var.MEMBER_NUM}</td>
-											<td class='center'>${var.ENTERPRISE_NAME}</td>
-											<td class='center'>${var.CONTACT_PHONE}</td>
-											<td class='center'>${var.ENTERPRISE_ADDRESS}</td>
-											<td class='center'>${var.RECRUIT_CNT}</td>
+											<td class='center'>${var.HOTNAME}</td>
 											<td class="center">
 												<c:if test="${QX.edit != 1 && QX.del != 1 }">
 												<span class="label label-large label-grey arrowed-in-right arrowed-in"><i class="ace-icon fa fa-lock" title="无权限"></i></span>
 												</c:if>
 												<div class="hidden-sm hidden-xs btn-group">
 													<c:if test="${QX.edit == 1 }">
-													<a class="btn btn-xs btn-success" title="编辑" onclick="edit('${var.MEMBER_ID}');">
+													<a class="btn btn-xs btn-success" title="编辑" onclick="edit('${var.HOTPOSITION_ID}');">
 														<i class="ace-icon fa fa-pencil-square-o bigger-120" title="编辑"></i>
 													</a>
 													</c:if>
 													<c:if test="${QX.del == 1 }">
-													<a class="btn btn-xs btn-danger" onclick="del('${var.MEMBER_ID}');">
+													<a class="btn btn-xs btn-danger" onclick="del('${var.HOTPOSITION_ID}');">
 														<i class="ace-icon fa fa-trash-o bigger-120" title="删除"></i>
 													</a>
 													</c:if>
@@ -117,7 +109,7 @@
 														<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 															<c:if test="${QX.edit == 1 }">
 															<li>
-																<a style="cursor:pointer;" onclick="edit('${var.MEMBER_ID}');" class="tooltip-success" data-rel="tooltip" title="修改">
+																<a style="cursor:pointer;" onclick="edit('${var.HOTPOSITION_ID}');" class="tooltip-success" data-rel="tooltip" title="修改">
 																	<span class="green">
 																		<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
 																	</span>
@@ -126,7 +118,7 @@
 															</c:if>
 															<c:if test="${QX.del == 1 }">
 															<li>
-																<a style="cursor:pointer;" onclick="del('${var.MEMBER_ID}');" class="tooltip-error" data-rel="tooltip" title="删除">
+																<a style="cursor:pointer;" onclick="del('${var.HOTPOSITION_ID}');" class="tooltip-error" data-rel="tooltip" title="删除">
 																	<span class="red">
 																		<i class="ace-icon fa fa-trash-o bigger-120"></i>
 																	</span>
@@ -263,7 +255,7 @@
 			 var diag = new top.Dialog();
 			 diag.Drag=true;
 			 diag.Title ="新增";
-			 diag.URL = '<%=basePath%>member/goAdd.do';
+			 diag.URL = '<%=basePath%>hotposition/goAdd.do';
 			 diag.Width = 450;
 			 diag.Height = 355;
 			 diag.CancelEvent = function(){ //关闭事件
@@ -285,7 +277,7 @@
 			bootbox.confirm("确定要删除吗?", function(result) {
 				if(result) {
 					top.jzts();
-					var url = "<%=basePath%>member/delete.do?MEMBER_ID="+Id+"&tm="+new Date().getTime();
+					var url = "<%=basePath%>hotposition/delete.do?HOTPOSITION_ID="+Id+"&tm="+new Date().getTime();
 					$.get(url,function(data){
 						nextPage(${page.currentPage});
 					});
@@ -299,7 +291,7 @@
 			 var diag = new top.Dialog();
 			 diag.Drag=true;
 			 diag.Title ="编辑";
-			 diag.URL = '<%=basePath%>member/goEdit.do?MEMBER_ID='+Id;
+			 diag.URL = '<%=basePath%>hotposition/goEdit.do?HOTPOSITION_ID='+Id;
 			 diag.Width = 450;
 			 diag.Height = 355;
 			 diag.CancelEvent = function(){ //关闭事件
@@ -340,7 +332,7 @@
 							top.jzts();
 							$.ajax({
 								type: "POST",
-								url: '<%=basePath%>member/deleteAll.do?tm='+new Date().getTime(),
+								url: '<%=basePath%>hotposition/deleteAll.do?tm='+new Date().getTime(),
 						    	data: {DATA_IDS:str},
 								dataType:'json',
 								//beforeSend: validateData,
@@ -359,7 +351,7 @@
 		
 		//导出excel
 		function toExcel(){
-			window.location.href='<%=basePath%>member/excel.do';
+			window.location.href='<%=basePath%>hotposition/excel.do';
 		}
 	</script>
 

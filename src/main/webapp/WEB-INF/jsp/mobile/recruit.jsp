@@ -91,9 +91,12 @@
 						<div class="clear0"></div>
 					</div>
 					<ul>
-						<li><a href="<%=basePath%>recruit_mobile/list?mobileCondition=喷漆" class="AIndexBox">喷漆</a>
-						</li>
-						<li><a href="<%=basePath%>recruit_mobile/list?mobileCondition=法规" class="AIndexBox">法规</a>
+						<c:forEach items="${hotData}" var="hot">
+							<li><a href="<%=basePath%>recruit_mobile/list?mobileCondition=${hot.HOTNAME}" class="AIndexBox">${hot.HOTNAME}</a>
+							</li>
+						</c:forEach>
+
+						<%--<li><a href="<%=basePath%>recruit_mobile/list?mobileCondition=法规" class="AIndexBox">法规</a>
 						</li>
 						<li><a href="/JobList.do?K=木工" class="AIndexBox">木工</a>
 						</li>
@@ -120,7 +123,7 @@
 						<li><a href="/JobList.do?K=厂长" class="AIndexBox">厂长</a>
 						</li>
 						<li><a href="/JobList.do?K=打磨" class="AIndexBox">打磨</a>
-						</li>
+						</li>--%>
 					</ul>
 					<div class="clear0"></div>
 				</div>

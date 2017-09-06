@@ -7,6 +7,7 @@ import com.fh.entity.system.Role;
 import com.fh.entity.system.User;
 import com.fh.param.RecruitInfoParam;
 import com.fh.param.RecruitSearchParam;
+import com.fh.service.hotposition.hotposition.impl.HotpositionService;
 import com.fh.service.recruit.recruit.RecruitManager;
 import com.fh.service.recruitInfo.recruitinfo.RecruitInfoManager;
 import com.fh.service.system.role.RoleManager;
@@ -45,6 +46,9 @@ public class RecruitMobileController extends BaseController {
 	
 	@Autowired
 	private RecruitInfoManager recruitInfoManager;
+
+	@Autowired
+	private HotpositionService hotpositionService;
 
 	/**列表
 	 * @param page
@@ -88,6 +92,8 @@ public class RecruitMobileController extends BaseController {
 		mv.setViewName("mobile/recruit");
 
 		//获取热门职位
+		List<PageData> hotData =  hotpositionService.listAll(null);
+		mv.addObject("hotData",hotData);
 
 		mv.addObject("varList", varList);
 		mv.addObject("pd", pd);

@@ -1,16 +1,16 @@
-package com.fh.service.member.member;
+package com.fh.service.hotposition.hotposition;
 
 import java.util.List;
 import com.fh.entity.Page;
 import com.fh.util.PageData;
 
 /** 
- * 说明： 会员接口
+ * 说明： 热门职位接口
  * 创建人：lugr
- * 创建时间：2017-03-13
+ * 创建时间：2017-09-06
  * @version
  */
-public interface MemberManager{
+public interface HotpositionManager{
 
 	/**新增
 	 * @param pd

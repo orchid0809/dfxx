@@ -1,4 +1,4 @@
-package com.fh.service.member.member.impl;
+package com.fh.service.hotposition.hotposition.impl;
 
 import java.util.List;
 import javax.annotation.Resource;
@@ -6,16 +6,16 @@ import org.springframework.stereotype.Service;
 import com.fh.dao.DaoSupport;
 import com.fh.entity.Page;
 import com.fh.util.PageData;
-import com.fh.service.member.member.MemberManager;
+import com.fh.service.hotposition.hotposition.HotpositionManager;
 
 /** 
- * 说明： 会员
+ * 说明： 热门职位
  * 创建人：lugr
- * 创建时间：2017-03-13
+ * 创建时间：2017-09-06
  * @version
  */
-@Service("memberService")
-public class MemberService implements MemberManager{
+@Service("hotpositionService")
+public class HotpositionService implements HotpositionManager{
 
 	@Resource(name = "daoSupport")
 	private DaoSupport dao;
@@ -25,7 +25,7 @@ public class MemberService implements MemberManager{
 	 * @throws Exception
 	 */
 	public void save(PageData pd)throws Exception{
-		dao.save("MemberMapper.save", pd);
+		dao.save("HotpositionMapper.save", pd);
 	}
 	
 	/**删除
@@ -33,7 +33,7 @@ public class MemberService implements MemberManager{
 	 * @throws Exception
 	 */
 	public void delete(PageData pd)throws Exception{
-		dao.delete("MemberMapper.delete", pd);
+		dao.delete("HotpositionMapper.delete", pd);
 	}
 	
 	/**修改
@@ -41,7 +41,7 @@ public class MemberService implements MemberManager{
 	 * @throws Exception
 	 */
 	public void edit(PageData pd)throws Exception{
-		dao.update("MemberMapper.edit", pd);
+		dao.update("HotpositionMapper.edit", pd);
 	}
 	
 	/**列表
@@ -50,7 +50,7 @@ public class MemberService implements MemberManager{
 	 */
 	@SuppressWarnings("unchecked")
 	public List<PageData> list(Page page)throws Exception{
-		return (List<PageData>)dao.findForList("MemberMapper.datalistPage", page);
+		return (List<PageData>)dao.findForList("HotpositionMapper.datalistPage", page);
 	}
 	
 	/**列表(全部)
@@ -59,7 +59,7 @@ public class MemberService implements MemberManager{
 	 */
 	@SuppressWarnings("unchecked")
 	public List<PageData> listAll(PageData pd)throws Exception{
-		return (List<PageData>)dao.findForList("MemberMapper.listAll", pd);
+		return (List<PageData>)dao.findForList("HotpositionMapper.listAll", pd);
 	}
 	
 	/**通过id获取数据
@@ -67,7 +67,7 @@ public class MemberService implements MemberManager{
 	 * @throws Exception
 	 */
 	public PageData findById(PageData pd)throws Exception{
-		return (PageData)dao.findForObject("MemberMapper.findById", pd);
+		return (PageData)dao.findForObject("HotpositionMapper.findById", pd);
 	}
 	
 	/**批量删除
@@ -75,7 +75,7 @@ public class MemberService implements MemberManager{
 	 * @throws Exception
 	 */
 	public void deleteAll(String[] ArrayDATA_IDS)throws Exception{
-		dao.delete("MemberMapper.deleteAll", ArrayDATA_IDS);
+		dao.delete("HotpositionMapper.deleteAll", ArrayDATA_IDS);
 	}
 	
 }
