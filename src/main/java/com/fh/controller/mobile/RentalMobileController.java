@@ -63,6 +63,7 @@ public class RentalMobileController extends BaseController {
 		mv.addObject("pd", pd);
 		mv.addObject("page", page);
 		//mv.addObject("QX",Jurisdiction.getHC());	//按钮权限
+		mv.addObject("rental_flag",2);
 		return mv;
 	}
 
@@ -78,6 +79,7 @@ public class RentalMobileController extends BaseController {
 		pd = rentalService.findById(pd);	//根据ID读取
 		mv.setViewName("mobile/rentalDetail");
 		mv.addObject("pd", pd);
+		mv.addObject("talents_flag",2);
 		return mv;
 	}
 

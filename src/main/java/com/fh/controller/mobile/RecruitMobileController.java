@@ -118,6 +118,7 @@ public class RecruitMobileController extends BaseController {
 		mv.addObject("recruit", recruitData);
 		mv.addObject("detail", infoData);
 		mv.addObject("pageDatas",pageDatas);
+		mv.addObject("recruit_flag",2);
 		return mv;
 	}	
 	

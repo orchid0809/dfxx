@@ -61,6 +61,7 @@ public class TalentsMobileController extends BaseController {
 		mv.addObject("varList", varList);
 		mv.addObject("page", page);
 		mv.addObject("pd", pd);
+		mv.addObject("talents_flag",2);
 		return mv;
 	}
 
@@ -77,6 +78,7 @@ public class TalentsMobileController extends BaseController {
 		mv.setViewName("mobile/talentsDetial");
 		mv.addObject("msg", "edit");
 		mv.addObject("pd", pd);
+		mv.addObject("talents_flag",2);
 		return mv;
 	}	
 	

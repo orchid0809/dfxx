@@ -55,6 +55,7 @@ public class IndexMobileController extends BaseController {
 		mv.addObject("talents",talentsMobileController.list(page).getModelMap().get("varList"));
 
 		mv.setViewName("mobile/index");
+		mv.addObject("mobile_flag",2);
 		return mv;
 	}
 	
