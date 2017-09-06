@@ -95,6 +95,7 @@ public class RecruitMobileController extends BaseController {
 		//mv.addObject("QX",Jurisdiction.getHC());	//按钮权限
 		System.out.println("flag:"+pd.getString("flag"));
 		mv.addObject("flag",pd.getString("flag"));
+		mv.addObject("recruit_flag",2);
 		return mv;
 	}
 	
