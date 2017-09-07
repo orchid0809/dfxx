@@ -67,7 +67,7 @@
 								<tr>
 									<td align="left">${recruit.CONTACT_PHONE}</td>
 									<td align="right"><a href="tel:18779718919"><img
-											src="/Images/TEL.jpg" />
+											src="<%=basePath%>static/mobile/image/phone.jpg" />
 									</a>
 									</td>
 								</tr>
@@ -105,7 +105,7 @@
 					</tr>
 					<tr>
 						<td class="show5">&nbsp;</td>
-						<td class="show5"><a href="/JobList.do?K=&P=" class="Submit3">返回列表</a>
+						<td class="show5"><a href="<%=basePath%>recruit_mobile/list" class="Submit3">返回列表</a>
 						</td>
 					</tr>
 				</table>
@@ -123,12 +123,12 @@
 			</div>
 			<div class="clear6"></div>
 			<div class="AboutText2">
-				<h3>相关招聘</h3>
+				<%--<h3>相关招聘</h3>
 				<span class="Hui99">[1]</span> <a href="/JobShow.do?ID=141330&K=&P="
 					class="F14">急招锣刨 <span class="HuiCC">/</span> 2名</a> <span
 					class="Hui99">[07-25]</span><br /> <span class="Hui99">[2]</span>
 				<a href="/JobShow.do?ID=125245&K=&P=" class="F14">急招锣刨 <span
-					class="HuiCC">/</span> 1组2名</a> <span class="Hui99">[02-28]</span><br />
+					class="HuiCC">/</span> 1组2名</a> <span class="Hui99">[02-28]</span><br />--%>
 			</div>
 		</div>
 	</div>

@@ -70,7 +70,7 @@
 								<tr>
 									<td align="left">${pd.CONTACT_PHONE}</td>
 									<td align="right"><a href="tel:13970120170"><img
-											src="/Images/TEL.jpg" />
+											src="<%=basePath%>static/mobile/image/phone.jpg" />
 									</a>
 									</td>
 								</tr>
@@ -100,7 +100,7 @@
 					</tr>
 					<tr>
 						<td class="show5">&nbsp;</td>
-						<td class="show5"><a href="/LeaseList.do?K=&P="
+						<td class="show5"><a href="<%=basePath%>rental_mobile/list"
 							class="Submit3">返回列表</a>
 						</td>
 					</tr>
