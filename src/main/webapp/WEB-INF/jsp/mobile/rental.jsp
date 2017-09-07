@@ -108,7 +108,7 @@
 									</td>
 									<td width="40" class="show5 x"><span class="Hui99 FontSize14">${var.PUBLISH_TIME}</span>
 									</td>
-									<td width="10" class="show5 x"><img src="Images/ICON2.png"
+									<td width="10" class="show5 x"><img src="<%=basePath%>static/mobile/image/detail.png"
 																		width="10" height="10" />
 									</td>
 								</tr>
