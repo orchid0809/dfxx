@@ -73,11 +73,11 @@
 											<c:if test="${pageDatas != null}">
 												<c:forEach items="${pageDatas}" var="var" varStatus="vs">
 													<tr class="recruit_Info">
-														<input type="hidden" name="recruits[${vs.index}].recruitInfoId" value="${var.RECRUITINFO_ID}"/>
-														<td><input type="text" name="recruits[${vs.index}].recruitPosition" value="${var.RECRUIT_POSITION}" maxlength="100" placeholder="这里输入招聘职位" title="招聘职位" style="width:98%;"/></td>
-														<td><input type="text" name="recruits[${vs.index}].recruitCnt" value="${var.RECRUIT_CNT}" maxlength="100" placeholder="这里输入招聘人数" title="招聘人数" style="width:98%;"/></td>
-														<td><input type="text" name="recruits[${vs.index}].positionRequire" value="${var.POSITION_REQUIRE}" maxlength="100" placeholder="这里输入职位要求" title="职位要求" style="width:98%;"/></td>
-														<input type="hidden"  name = "recruits[${vs.index}].sort" value="${var.SORT==null?0:var.SORT}"/>
+														<input type="hidden" class="recruitInfoId"  name="recruits[${vs.index}].recruitInfoId" value="${var.RECRUITINFO_ID}"/>
+														<td><input type="text" class="position" name="recruits[${vs.index}].recruitPosition" value="${var.RECRUIT_POSITION}" maxlength="100" placeholder="这里输入招聘职位" title="招聘职位" style="width:98%;"/></td>
+														<td><input type="text" class="cnt" name="recruits[${vs.index}].recruitCnt" value="${var.RECRUIT_CNT}" maxlength="100" placeholder="这里输入招聘人数" title="招聘人数" style="width:98%;"/></td>
+														<td><input type="text" class="require" name="recruits[${vs.index}].positionRequire" value="${var.POSITION_REQUIRE}" maxlength="100" placeholder="这里输入职位要求" title="职位要求" style="width:98%;"/></td>
+														<input type="hidden" class="sort"  name = "recruits[${vs.index}].sort" value="${var.SORT==null?0:var.SORT}"/>
 														<td>
 															<c:if test="${vs.index == 0}">
 																<i class="add_recruit glyphicon glyphicon-plus" title="增加"></i>
@@ -188,15 +188,22 @@
 
 				$(this).closest('.recruit_Info').nextAll('.recruit_Info').each(function(index){
 					//alert(index)
-					$(this).find('.position').attr("name","recruits["+(allCnt-preCnt-1+index)+"].recruitPosition")
-					$(this).find('.cnt').attr("name","recruits["+(allCnt-preCnt-1+index)+"].recruitCnt")
-					$(this).find('.require').attr("name","recruits["+(allCnt-preCnt-1+index)+"].recruitRequire")
+					//index--;
+					//
+					//alert($(this).find('.position').length)
+					$(this).find(".recruitInfoId").attr("name","recruits["+(allCnt-nextCnt-1+index)+"].recruitInfoId");
+					$(this).find('.position').attr("name","recruits["+(allCnt-nextCnt-1+index)+"].recruitPosition");
+					//alert($(this)[0])
+					$(this).find('.cnt').attr("name","recruits["+(allCnt-nextCnt-1+index)+"].recruitCnt");
+					$(this).find('.require').attr("name","recruits["+(allCnt-nextCnt-1+index)+"].recruitRequire");
+					$(this).find(".sort").attr("name","recruits["+(allCnt-nextCnt-1+index)+"].sort");
 				})
 				//alert($('.remove_recruit').attr("data"))
+				var that = $(this);
 				$.ajax({
 					type: "POST",
 					url:"<%=basePath%>recruit/deleteInfo.do",
-					data: {RECRUITINFO_ID:$('.remove_recruit').attr("data")},
+					data: {RECRUITINFO_ID:that.attr("data")},
 					dataType:'json',
 					//beforeSend: validateData,
 					cache: false,

@@ -19,8 +19,8 @@
         <table style="width: 100%">
             <tr>
                 <td  style="height: 25px; text-align: left; font-weight: bold; font-family:华文行楷; font-size: 40px;color:white";>德方信息部</td>
-                <td  style="height: 25px; text-align: center; font-weight: bold; font-size: 30px;color:white">德方人力资源服务有限公司发布  招工热线/微信：13257047701</td>
-                <td  style="height: 25px; text-align: right; font-weight: bold; font-size: 10px;color:white">有效期：${pd.PUBLISH_TIME}~${pd.DEADLINE_TIME}</td>
+                <td  style="height: 25px; text-align: center; font-weight: bold; font-size: 30px;color:white">德方人力资源服务有限公司发布  招工热线/微信：15079762080</td>
+                <td  style="height: 25px; text-align: right; font-weight: bold; font-size: 25px;color:white">有效期：${pd.PUBLISH_TIME}~${pd.DEADLINE_TIME}</td>
             </tr>
         </table>
     </div>
