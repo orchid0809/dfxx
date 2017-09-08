@@ -394,7 +394,7 @@
 
 			//alert($('#PrintHTML').outerWidth())
 
-			var content_length = $('.main_content span').text().length;
+			/*var content_length = $('.main_content span').text().length;
 			var line_height = $('.main_content span').css("line-height");
 			alert("line_height:"+line_height+"  content_length"+content_length)
 			var div_w = 1550 //$('.main_content').width();
@@ -402,9 +402,9 @@
 
 			var divs = div_w*div_h;
 
-			alert("div_w:"+div_w+" * div_h:"+div_h+"  divs="+divs)
+			alert("div_w:"+div_w+" * div_h:"+div_h+"  divs="+divs)*/
 
-			var init_font = 100;
+			/*var init_font = 100;
 			var fonts = 0;
 			do{
 
@@ -413,8 +413,15 @@
 			}while(fonts > divs);
 			alert("font:"+init_font)
 			alert("fonts:"+fonts)
-			//var fontJ_size = parseInt(content_length)* 0.82;
-			$('.main_content span').css({'font-size':init_font+"px"})
+			//var fontJ_size = parseInt(content_length)* 0.82;*/
+			var mainLength = $('.main_content').text().length;
+			if(mainLength <= 100){
+				$('.main_content').css({'font-size':"150px"})
+			} else if(mainLength > 100 && mainLength <= 150){
+				$('.main_content').css({'font-size':"120px"})
+			}
+
+
 		}
 
 		var LODOP;

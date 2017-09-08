@@ -9,6 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.Resource;
+
+import com.fh.common.HTMLSpirit;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
@@ -219,8 +221,10 @@ public class RentalController extends BaseController {
 		PageData pd = new PageData();
 		pd = this.getPageData();
 		pd = this.rentalService.findById(pd);	//根据ID读取
+		pd.put("INFO_CONTENT", HTMLSpirit.delHTMLTag((String)pd .get("INFO_CONTENT")));
 		mv.addObject("msg", "edit");
 		mv.addObject("pd", pd);
+
 		mv.setViewName("rental/rental/rental_print");
 		return mv;
 	}

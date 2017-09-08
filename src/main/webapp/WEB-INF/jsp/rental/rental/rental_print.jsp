@@ -85,7 +85,7 @@
                 <div class="main_content" style="display:table-cell;
             vertical-align:middle;
             text-align: center; /*设置文本水平居中*/
-            width:100%;border: 1px solid red;height: 100%;">
+            width:100%;border: 0px solid red;height: 100%; padding-left:20px">
                    ${pd.INFO_CONTENT}
 
                 </div>
