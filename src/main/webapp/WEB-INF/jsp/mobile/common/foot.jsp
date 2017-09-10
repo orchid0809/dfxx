@@ -24,8 +24,8 @@
 </div>--%>
 <div class="Foot">
     <p style="text-indent:2em;" align="center">
-        <span></span> 南康德方-服务热线：0797-6638464，<span
-            style="line-height:1.5;">联系人：15083585585（微信同号）</span>
+        <span></span> 德方人力资源服务有限公司(加盟热线)-厂家招聘服务热线：15079762080（微信同号）<%--<span
+            style="line-height:1.5;">联系人：</span>--%>
 			</span>
     </p>
     <p style="text-indent:2em;" align="center">

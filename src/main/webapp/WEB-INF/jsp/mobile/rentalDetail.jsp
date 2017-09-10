@@ -68,8 +68,8 @@
 						<td class="show5 x">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 								<tr>
-									<td align="left">${pd.CONTACT_PHONE}</td>
-									<td align="right"><a href="tel:13970120170"><img
+									<td align="left">${phone}</td>
+									<td align="right"><a href="tel:${pd.CONTACT_PHONE}"><img
 											src="<%=basePath%>static/mobile/image/phone.jpg" />
 									</a>
 									</td>

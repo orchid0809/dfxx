@@ -75,6 +75,16 @@ public class TalentsMobileController extends BaseController {
 		PageData pd = new PageData();
 		pd = this.getPageData();
 		pd = talentsService.findById(pd);	//根据ID读取
+		String phone = pd.getString("CONTACT_PHONE");
+		mv.addObject("phone",phone);
+		String reg = "[\u4e00-\u9fa5]";
+		phone  = phone.replaceAll(reg,"");
+		phone = phone.replaceAll("[\\pP\\p{Punct}]", "-");
+		String phones [] = phone.split("-");
+		if(phones != null && phones.length > 0){
+			phone = phones[0];
+		}
+		pd.put("CONTACT_PHONE",phone);
 		mv.setViewName("mobile/talentsDetial");
 		mv.addObject("msg", "edit");
 		mv.addObject("pd", pd);

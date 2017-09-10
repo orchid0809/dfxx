@@ -119,7 +119,21 @@ public class RecruitMobileController extends BaseController {
 		pd.put("RECRUITINFO_ID",infoId);
 		PageData infoData = recruitInfoManager.findById(pd);
 
+		String phone = recruitData.getString("CONTACT_PHONE");
+		mv.addObject("phone",phone);
+		String reg = "[\u4e00-\u9fa5]";
+		phone  = phone.replaceAll(reg,"");
+		phone = phone.replaceAll("[\\pP\\p{Punct}]", "-");
+		String phones [] = phone.split("-");
+		if(phones != null && phones.length > 0){
+			phone = phones[0];
+		}
+		recruitData.put("CONTACT_PHONE",phone);
 		List<PageData> pageDatas = recruitInfoManager.findByRecruitId(pd);
+
+
+
+
 		mv.setViewName("mobile/recruitDetail");
 		mv.addObject("recruit", recruitData);
 		mv.addObject("detail", infoData);
