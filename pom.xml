@@ -686,7 +686,7 @@
                     <port>8080</port> -->
                     <!-- <username>tomcat</username>settings.xml文件已配置，此处可不配
                     <password>tomcat</password>settings.xml文件已配置，此处可不配   -->
-                    <port>8080</port> <path>/crm</path> <url>http://localhost:8080/manager/text</url>
+                    <port>8080</port> <path>/crm</path> <url>http://localhost:80/manager/text</url>
                     <username>admin</username> <password>admin</password> <server>Tomcat7</server>
                 </configuration>
             </plugin>
