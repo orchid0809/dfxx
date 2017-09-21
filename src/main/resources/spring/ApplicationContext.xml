@@ -125,6 +125,7 @@
 				<value>
 				/recruit/recruit_print				= anon
 				/rental/rental_print				= anon
+
 				/mobile/index              = anon
 				/recruit_mobile/list		 	 =anon
 					/recruit_mobile/detail		 	 =anon
@@ -132,6 +133,7 @@
 					/rental_mobile/detail		 	 =anon
 					/talents_mobile/list		 	 =anon
 					/talents_mobile/detail		 	 =anon
+					/recruit/print			=anon
 				/rental/print				= anon
 				/static/ace/** 			= anon
 				/static/login/** 			= anon

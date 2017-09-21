@@ -40,7 +40,7 @@
 
             <tbody>
             <tr>
-                <td style="font-size: 120px; text-align: center; border: 0px solid black;">
+                <td style="font-size: 200px; text-align: center; border: 0px solid black;">
 
                     <c:if test="${pageDatas != null}">
                         <c:if test="${fn:length(pageDatas) > 2}">

@@ -124,7 +124,7 @@ public class RecruitController extends BaseController {
 		PageData pd = new PageData();
 		pd = this.getPageData();
 		pd = recruitService.findById(pd);	//根据ID读取
-		mv.setViewName("recruit/recruit/recruit_edit");
+		//mv.setViewName("recruit/recruit/recruit_edit");
 		mv.addObject("msg", "edit");
 		String recruitId = (String)pd.get("RECRUIT_ID");
 		List<PageData> pageDatas = recruitInfoManager.findByRecruitId(pd);

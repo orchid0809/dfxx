@@ -70,7 +70,7 @@ function getLodop(oOBJECT,oEMBED){
                  return;
             } else {
 
-	         if (CLODOP.CVERSION<"2.1.0.2") { 
+	         if (CLODOP.CVERSION<"3.0.0.8") { 
 			if (isIE) document.write(strCLodopUpdate); else
 			document.documentElement.innerHTML=strCLodopUpdate+document.documentElement.innerHTML;
 		 };
@@ -104,12 +104,12 @@ function getLodop(oOBJECT,oEMBED){
                  return LODOP;
             };
         };
-        if (LODOP.VERSION<"6.2.1.7") {
-            if (needCLodop())
-            document.documentElement.innerHTML=strCLodopUpdate+document.documentElement.innerHTML; else
-            if (is64IE) document.write(strHtm64_Update); else
-            if (isIE) document.write(strHtmUpdate); else
-            document.documentElement.innerHTML=strHtmUpdate+document.documentElement.innerHTML;
+        if (LODOP.VERSION<"6.2.2.0") {
+            if (!needCLodop()){
+            	if (is64IE) document.write(strHtm64_Update); else
+            	if (isIE) document.write(strHtmUpdate); else
+            	document.documentElement.innerHTML=strHtmUpdate+document.documentElement.innerHTML;
+	    };
             return LODOP;
         };
         //===如下空白位置适合调用统一功能(如注册语句、语言选择等):===

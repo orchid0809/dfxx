@@ -32,7 +32,7 @@ public class Const {
 	public static final String FILEPATHIMG = "uploadFiles/uploadImgs/";	//图片上传路径
 	public static final String FILEPATHFILE = "uploadFiles/file/";		//文件上传路径
 	public static final String FILEPATHTWODIMENSIONCODE = "uploadFiles/twoDimensionCode/"; //二维码存放路径
-	public static final String NO_INTERCEPTOR_PATH = ".*/((login)|(logout)|(code)|(app)|(weixin)|(static)|(main)|(websocket)|(rental/rental_print)|(recruit/recruit_print)|(rental/print)|(mobile/index)|(recruit_mobile/list)|(recruit_mobile/detail)|(rental_mobile/list)|(rental_mobile/detail)|(talents_mobile/list)|(talents_mobile/detail)).*";	//不对匹配该值的访问路径拦截（正则）
+	public static final String NO_INTERCEPTOR_PATH = ".*/((login)|(logout)|(code)|(app)|(weixin)|(static)|(main)|(websocket)|(rental/rental_print)|(recruit/recruit_print)|(rental/print)|(mobile/index)|(recruit_mobile/list)|(recruit_mobile/detail)|(rental_mobile/list)|(rental_mobile/detail)|(talents_mobile/list)|(talents_mobile/detail)|(recruit/print)).*";	//不对匹配该值的访问路径拦截（正则）
 	public static ApplicationContext WEB_APP_CONTEXT = null; //该值会在web容器启动时由WebAppContextListener初始化
 	
 	/**
