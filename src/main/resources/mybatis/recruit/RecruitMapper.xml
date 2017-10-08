@@ -115,7 +115,7 @@
 		order by CREATE_DATE desc
 	</select>-->
 
-	<select id="datalistPage" parameterType="page" resultType="pd">
+	<select id="datalistPage" parameterType="page"  resultType="pd" >
 		SELECT DISTINCT
 		re.*
 		FROM

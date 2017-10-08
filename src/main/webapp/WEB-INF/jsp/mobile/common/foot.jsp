@@ -41,6 +41,6 @@
         <span> </span>
     </p>
     <br />
-    <script language="javascript" type="text/javascript"
-            src="http://js.users.51.la/18193696.js"></script>
+    <%--<script language="javascript" type="text/javascript"
+            src="http://js.users.51.la/18193696.js"></script>--%>
 </div>

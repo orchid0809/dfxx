@@ -76,12 +76,14 @@ public class RecruitMobileController extends BaseController {
 				String recruitId = (String)pageData.get("RECRUIT_ID");
 				pd.put("RECRUIT_ID", recruitId);
 				String position = (String)pd.get("recruitPosition");
+				//pd.put("mobileCondition",pd.get("mobileCondition"));
 				List<PageData> pageDatas = recruitInfoManager.findByRecruitId(pd);
 				if((pageDatas != null && pageDatas.size() > 0) || (position == null || "".equals(position))){
 					/*StringBuffer recruitStr = new StringBuffer();
 					for(PageData pData : pageDatas){
 						recruitStr.append(pData.get("RECRUIT_POSITION")+"/"+pData.get("RECRUIT_CNT")+"/"+pData.get("POSITION_REQUIRE")+"<br/>");
 					}*/
+
 					pageData.put("recInfo", pageDatas);
 				}else{
 					temps.add(pageData);
@@ -102,6 +104,7 @@ public class RecruitMobileController extends BaseController {
 		System.out.println("flag:"+pd.getString("flag"));
 		mv.addObject("flag",pd.getString("flag"));
 		mv.addObject("recruit_flag",2);
+		mv.addObject("mobileCondition",pd.get("mobileCondition"));
 		return mv;
 	}
 	
@@ -139,6 +142,9 @@ public class RecruitMobileController extends BaseController {
 		mv.addObject("detail", infoData);
 		mv.addObject("pageDatas",pageDatas);
 		mv.addObject("recruit_flag",2);
+		mv.addObject("mobileCondition",pd.get("mobileCondition"));
+		mv.addObject("currentPage",pd.get("currentPage"));
+
 		return mv;
 	}	
 	

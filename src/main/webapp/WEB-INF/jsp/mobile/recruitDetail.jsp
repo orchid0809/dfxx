@@ -105,7 +105,7 @@
 					</tr>
 					<tr>
 						<td class="show5">&nbsp;</td>
-						<td class="show5"><a href="<%=basePath%>recruit_mobile/list" class="Submit3">返回列表</a>
+						<td class="show5"><a href="<%=basePath%>recruit_mobile/list?mobileCondition=${mobileCondition}&currentPage=${currentPage}" class="Submit3">返回列表</a>
 						</td>
 					</tr>
 				</table>

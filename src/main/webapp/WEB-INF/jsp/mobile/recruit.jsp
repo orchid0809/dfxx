@@ -42,7 +42,9 @@
 <script type="text/javascript">
 
 	function nextPage(currentPage){
-		$('.mobileCondition').val($("input[name=mobileCondition]").val())
+		//alert($(".mobileC").val())
+		$('.mobileCondition').val($(".mobileC").val())
+
 		$('.currentPage').val(currentPage);
 		$('#PageSS').submit();
 	}
@@ -63,7 +65,7 @@
 		<div class="BoxContent">
 			<form action="<%=basePath%>recruit_mobile/list" method="post" name="TopSS" id="TopSS">
 				<div class="SearchK">
-					<input name="mobileCondition" type="text" id="K" class="FormTest1" placeholder="可搜索手机 厂名 工种和地址"
+					<input name="mobileCondition" type="text" id="mobileC" class="FormTest1 mobileC" value="${mobileCondition}" placeholder="可搜索手机 厂名 工种和地址"
 						<%--value="可搜索手机 厂名 工种和地址"
 						onFocus="if(this.value=='可搜索手机 厂名 工种和地址')this.value='';"--%> />
 				</div>
@@ -140,10 +142,10 @@
 
 								<c:forEach items="${var.recInfo}" var="recInfo">
 									<tr
-											onClick="window.location.href='<%=basePath%>recruit_mobile/detail?id=${var.RECRUIT_ID}&infoId=${recInfo.RECRUITINFO_ID}';return false">
-										<td class="show5 x"><a href="/JobShow.do?ID=141329&K=&P=1">${recInfo.RECRUIT_POSITION}
+											onClick="window.location.href='<%=basePath%>recruit_mobile/detail?id=${var.RECRUIT_ID}&infoId=${recInfo.RECRUITINFO_ID}&mobileCondition='+document.getElementById('mobileC').value+'&currentPage='+document.getElementById('currentPage').value;return false">
+										<td class="show5 x"><%--<a href="/JobShow.do?ID=141329&K=&P=1">--%>${recInfo.RECRUIT_POSITION}
 											<span class="Hui99">/</span>${recInfo.RECRUIT_CNT} <span class="Hui99">/</span>
-												${recInfo.POSITION_REQUIRE}</a><br />
+												${recInfo.POSITION_REQUIRE}<%--</a>--%><br />
 											<span class="Hui99 FontSize12">${var.ENTERPRISE_NAME}</span>
 										</td>
 										<td width="40" class="show5 x"><span class="Hui99 FontSize14">${var.PUBLISH_TIME}</span>
@@ -407,7 +409,7 @@
 			</div>
 			<div class="clear20"></div>
 			<form action="<%=basePath%>recruit_mobile/list" method="post" name="PageSS" id="PageSS">
-				<input type="hidden" name="currentPage" class="currentPage" value="1" />
+				<input type="hidden" name="currentPage" id="currentPage" class="currentPage" value="${page.currentPage}" />
 				<input type="hidden" name="mobileCondition" class="mobileCondition" value="1" />
 				<div class="Pagediv">
 					<ul class="Pageul">
@@ -415,7 +417,7 @@
 							<li class="Pageli"><a href="javascript:void(0)" onclick="nextPage(${page.currentPage}-1)"  class="APage">上一页</a>
 						</c:if>
 
-						<c:forEach   var= "temp"   begin= "1"   step= "1"   end= "${page.totalPage}">
+						<c:forEach   var= "temp"   begin= "${page.currentPage >2?page.currentPage-2:1}"   step= "1"   end= "${page.currentPage <page.totalPage -2?page.currentPage+2:page.totalPage}">
 							<li class="${page.currentPage == temp?'PageTest':'Pageli'}">
 							<c:choose>
 

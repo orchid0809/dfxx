@@ -76,13 +76,23 @@
 	<!-- 通过RECRUIT_ID获取数据 -->
 	<select id="findByRecruitId" parameterType="pd" resultType="pd">
 		select 
-		<include refid="Field"></include>
+		<!--<include refid="Field"></include>-->
+		info.*
 		from 
-		<include refid="tableName"></include>
-		where 
-			RECRUIT_ID = #{RECRUIT_ID}
+		<!--<include refid="tableName"></include>-->
+		crm_recruit re,
+		crm_recruitinfo info
+		where
+		re.RECRUIT_ID = info.RECRUIT_ID and
+			info.RECRUIT_ID = #{RECRUIT_ID}
 		<if test="recruitPosition!= null and recruitPosition != ''"><!-- 关键词检索 -->
 			and RECRUIT_POSITION LIKE CONCAT(CONCAT('%', #{recruitPosition}),'%')
+		</if>
+
+		<if test="mobileCondition!= null and mobileCondition!= ''"><!-- 关键词检索 -->
+			and (re.CONTACT_PHONE like '%${mobileCondition}%' or re.ENTERPRISE_NAME like '%${mobileCondition}%'
+			or  info.RECRUIT_POSITION like '%${mobileCondition}%' or re.ENTERPRISE_ADDRESS like '%${mobileCondition}%')
+
 		</if>
 
 		order by SORT

@@ -384,7 +384,7 @@
 						<li class="Pageli"><a href="javascript:void(0)" onclick="nextPage(${page.currentPage}-1)"  class="APage">上一页</a>
 							</c:if>
 
-							<c:forEach   var= "temp"   begin= "1"   step= "1"   end= "${page.totalPage}">
+							<c:forEach   var= "temp"   begin= "${page.currentPage >2?page.currentPage-2:1}"   step= "1"   end= "${page.currentPage <page.totalPage -2?page.currentPage+2:page.totalPage}">
 						<li class="${page.currentPage == temp?'PageTest':'Pageli'}">
 							<c:choose>
 
