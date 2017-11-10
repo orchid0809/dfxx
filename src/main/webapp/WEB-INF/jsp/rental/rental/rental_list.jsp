@@ -436,7 +436,7 @@
 				//LODOP.ADD_PRINT_IMAGE('22%','30%',800,800,"<img border='0' width='100%' height='100%' src='http://create.b0.upaiyun.com/logo_2!bac'/>")
 				var width = $(window).width();
 				 var height = $(window).height();
-				LODOP.ADD_PRINT_IMAGE(0,0,"100%","100%","<img border='0' width='1550px' height='1100px' src='http://create.b0.upaiyun.com/logo_3!bac'/>")
+				LODOP.ADD_PRINT_IMAGE(0,0,"100%","100%","<img border='0' width='1550px' height='1100px' src='http://create.b0.upaiyun.com/logo_4!bac'/>")
 				//LODOP.SET_PRINT_STYLEA(2,"AngleOfPageInside",180);
 				//LODOP.SET_PRINT_STYLEA(0,"Angle",180)
 				LODOP.SET_PRINT_STYLE('Alignment',2);
