@@ -14,8 +14,8 @@
     <title>Title</title>
 </head>
 <body>
-<div id="PrintHTML" style="opacity:0.3;-moz-opacity: 0.3; border:1px solid black;height:100%;width:100%;">
-    <div style="border:0px solid black;margin-top:42px">
+<div id="PrintHTML" style="opacity:0.3;-moz-opacity: 0.3; border:0px solid black;height:100%;width:100%;">
+    <div style="border:0px solid black;padding-top:40px">
         <table style="width: 100%">
             <tr>
                <%-- <td  style="height: 25px; text-align: left; font-weight: bold; font-family:华文行楷; font-size: 40px;color:white";>&lt;%&ndash;德方信息部&ndash;%&gt;</td>
