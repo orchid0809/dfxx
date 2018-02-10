@@ -432,7 +432,7 @@
 				LODOP = getLodop(document.getElementById('LODOP_OB'), document.getElementById('LODOP_EM'));
 				LODOP.SET_PRINT_PAGESIZE(2, 0, 0, "A3"); //规定纸张大小；使用A4纸。
 				//LODOP.ADD_PRINT_IMAGE('22%','30%',800,800,"<img border='0' width='800px'height='565px' src='http://create.b0.upaiyun.com/logo_2!bac'/>")
-				LODOP.ADD_PRINT_IMAGE(0,0,"100%","100%","<img border='0' width='1550px' height='1100px' src='http://create.b0.upaiyun.com/logo_4!bac'/>")
+				LODOP.ADD_PRINT_IMAGE(0,0,"100%","100%","<img border='0' width='1550px' height='1100px' src='http://create.b0.upaiyun.com/logo7!bac'/>")
 				//LODOP.ADD_PRINT_SETUP_BKIMG(0,0,"100%","100%","<img border='0' width='1550px' height='1100px' src='http://create.b0.upaiyun.com/logo_2!bac'/>")
 				//LODOP.SET_SHOW_MODE("BKIMG_PRINT",1);
 
