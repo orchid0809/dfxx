@@ -12,15 +12,21 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        ul,li{
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
 </head>
 <body>
 <div id="PrintHTML" style="opacity:0.3;-moz-opacity: 0.3; border:0px solid black;height:100%;width:100%;">
-    <div style="border:0px solid black;padding-top:40px">
+    <div style="border:0px solid black;padding-top:53px">
         <table style="width: 100%">
             <tr>
                <%-- <td  style="height: 25px; text-align: left; font-weight: bold; font-family:华文行楷; font-size: 40px;color:white";>&lt;%&ndash;德方信息部&ndash;%&gt;</td>
                 <td  style="height: 25px; text-align: center; font-weight: bold; font-size: 30px;color:white">&lt;%&ndash;德方人力资源服务有限公司发布  招工热线/微信：15079762080&ndash;%&gt;</td>--%>
-                <td  style="height: 25px; text-align: right; font-weight: bold; font-size: 26px;color:white">
+                <td  style="height: 25px; text-align: right; font-weight: bold; font-size: 23px;color:white">
                     <fmt:parseDate value="${pd.PUBLISH_TIME}" pattern="yyyy-MM-dd" var="startDate"/>
                     <fmt:parseDate value="${pd.DEADLINE_TIME}" pattern="yyyy-MM-dd" var="endDate"/>
                     有效期：
@@ -43,7 +49,7 @@
     </div>
 
     <div style="border:0px solid black">
-        <table style="width: 100%; border:0px solid black;border-collapse: collapse; table-layout: fixed; margin-top: 5px;;height:65%" id="Print_OsaledInformation">
+        <table style="width: 100%; border:0px solid black;border-collapse: collapse; table-layout: fixed; margin-top: 5px;;height:60%" id="Print_OsaledInformation">
 
             <tbody>
             <tr>
@@ -77,17 +83,28 @@
         </table>
     </div>
 
-    <div style="border:0px solid black;margin-left:20px">
+    <div style="border:0px solid black;margin-left:20px;">
+        <ul style="list-style-type:none; font-size:70px;">
+            <li>
+                电话： ${pd.CONTACT_PHONE}
+            </li>
+            <li>
+                地址：${pd.ENTERPRISE_ADDRESS}
+            </li>
+        </ul>
+    </div>
+
+    <%--<div style="border:1px solid black;margin-left:20px;margin-bottom: 0px;">
         <table style="width: 100%;">
             <tr>
-                <td style="width: 25%;line-height:30px; font-size:70px; text-align: left; border: 0px solid black;" >
+                <td style="width: 25%;line-height:25px; font-size:70px; text-align: left; border: 0px solid black;" >
                     电话： ${pd.CONTACT_PHONE}
                 </td>
             </tr>
         </table>
     </div>
 
-    <div style="margin-left: 20px;margin-top:30px">
+    <div style="margin-left: 20px;margin-top:25px">
 
         <table style="width: 100%;">
             <tr >
@@ -96,7 +113,7 @@
                 </td>
             </tr>
         </table>
-    </div>
+    </div>--%>
 
 
 

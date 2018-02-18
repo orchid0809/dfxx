@@ -32,13 +32,13 @@
 <%--style="background-image: url(http://create.b0.upaiyun.com/logo_2!bac);background-size:cover; width:1850px ;height:1300px"--%>
 <div >
     <div id="PrintHTML" style="opacity:0.3;-moz-opacity: 0.3; border:0px solid black;height:100%;width:100%;">
-        <div style="border:0px solid black;padding-top:40px">
+        <div style="border:0px solid black;padding-top:53px">
             <table style="width: 100%">
                 <tr>
                     <td  style="height: 25px; text-align: left; font-weight: bold; font-family:华文行楷; font-size: 40px;color:white";><%--德方信息部--%></td>
                     <td  style="height: 25px; text-align: center; font-weight: bold; font-size: 30px;color:white"><%--德方人力资源服务有限公司发布  招工热线/微信：15079762080--%></td>
                    <%-- <td  style="height: 25px; text-align: right; font-weight: bold; font-size: 25px;color:white">有效期：${pd.PUBLISH_TIME}~${pd.DEADLINE_TIME}</td>--%>
-                    <td  style="height: 25px; text-align: right; font-weight: bold; font-size: 26px;color:white">
+                    <td  style="height: 25px; text-align: right; font-weight: bold; font-size: 23px;color:white">
                         <fmt:parseDate value="${pd.PUBLISH_TIME}" pattern="yyyy-MM-dd" var="startDate"/>
                         <fmt:parseDate value="${pd.DEADLINE_TIME}" pattern="yyyy-MM-dd" var="endDate"/>
                         有效期：
@@ -60,7 +60,7 @@
              </table>
          </div>--%>
 
-        <div style="border:0px solid red;font-size: 110px;width:100%;margin-top:29px; text-align: center;height: 5%; display: table;
+        <div style="border:0px solid red;font-size: 110px;width:100%;margin-top:20px; text-align: center;height: 5%; display: table;
         ">
             <div  style="display:table-cell;
             vertical-align:middle;
