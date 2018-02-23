@@ -56,9 +56,49 @@
                 <td style="font-size: 200px; text-align: center; border: 0px solid black;">
 
                     <c:if test="${pageDatas != null}">
-                        <c:if test="${fn:length(pageDatas) > 2}">
+                        <c:if test="${fn:length(pageDatas) == 3}">
+
                             <c:forEach items="${pageDatas}" var="var" varStatus="vs">
-                                ${var.RECRUIT_POSITION}:${var.RECRUIT_CNT} <c:if test='${fn:trim(var.POSITION_REQUIRE) == ""} '>:</c:if> <span style="font-size:60px">${var.POSITION_REQUIRE}</span> <br>
+                                <span style="font-size:180px">
+                                      ${var.RECRUIT_POSITION}:${var.RECRUIT_CNT}
+                                </span>
+                               <c:if test='${fn:trim(var.POSITION_REQUIRE) == ""} '>:</c:if> <span style="font-size:60px">${var.POSITION_REQUIRE}</span> <br>
+
+                            </c:forEach>
+
+                        </c:if>
+
+                        <c:if test="${fn:length(pageDatas) == 4}">
+
+                            <c:forEach items="${pageDatas}" var="var" varStatus="vs">
+                                <span style="font-size:141px">
+                                      ${var.RECRUIT_POSITION}:${var.RECRUIT_CNT}
+                                </span>
+                                <c:if test='${fn:trim(var.POSITION_REQUIRE) == ""} '>:</c:if> <span style="font-size:60px">${var.POSITION_REQUIRE}</span> <br>
+
+                            </c:forEach>
+
+                        </c:if>
+
+                        <c:if test="${fn:length(pageDatas) == 5}">
+
+                            <c:forEach items="${pageDatas}" var="var" varStatus="vs">
+                                <span style="font-size:110px">
+                                      ${var.RECRUIT_POSITION}:${var.RECRUIT_CNT}
+                                </span>
+                                <c:if test='${fn:trim(var.POSITION_REQUIRE) == ""} '>:</c:if> <span style="font-size:60px">${var.POSITION_REQUIRE}</span> <br>
+
+                            </c:forEach>
+
+                        </c:if>
+
+                        <c:if test="${fn:length(pageDatas) > 5}">
+
+                            <c:forEach items="${pageDatas}" var="var" varStatus="vs">
+                                <span style="font-size:95px">
+                                      ${var.RECRUIT_POSITION}:${var.RECRUIT_CNT}
+                                </span>
+                                <c:if test='${fn:trim(var.POSITION_REQUIRE) == ""} '>:</c:if> <span style="font-size:60px">${var.POSITION_REQUIRE}</span> <br>
 
                             </c:forEach>
 
@@ -68,7 +108,7 @@
                             <c:forEach items="${pageDatas}" var="var" varStatus="vs">
 
                                 <c:if test='${empty fn:trim(var.POSITION_REQUIRE)} '>fff</c:if>
-                                ${var.RECRUIT_POSITION}:${var.RECRUIT_CNT}<br> <span style="font-size:60px">${var.POSITION_REQUIRE}</span> <br>
+                                ${var.RECRUIT_POSITION}:${var.RECRUIT_CNT}<br> <span style="font-size:60px">&nbsp;${var.POSITION_REQUIRE}</span> <br>
 
                             </c:forEach>
                         </c:if>
