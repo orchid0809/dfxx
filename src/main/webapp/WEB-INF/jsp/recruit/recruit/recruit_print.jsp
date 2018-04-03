@@ -29,9 +29,9 @@
                 <td  style="height: 25px; text-align: right; font-weight: bold; font-size: 23px;color:white">
                     <fmt:parseDate value="${pd.PUBLISH_TIME}" pattern="yyyy-MM-dd" var="startDate"/>
                     <fmt:parseDate value="${pd.DEADLINE_TIME}" pattern="yyyy-MM-dd" var="endDate"/>
-                    有效期：
-                    <fmt:formatDate value="${startDate}" pattern="MM-dd" />
-                    ~
+                    到期时间：
+                   <%-- <fmt:formatDate value="${startDate}" pattern="MM-dd" />
+                    ~--%>
                     <fmt:formatDate value="${endDate}" pattern="MM-dd" />
                 </td>
             </tr>

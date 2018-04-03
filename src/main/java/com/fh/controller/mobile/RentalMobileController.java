@@ -52,7 +52,7 @@ public class RentalMobileController extends BaseController {
 			pd.put("keywords", keywords.trim());
 		}
 		page.setPd(pd);
-		page.setShowCount(5);
+		page.setShowCount(13);
 		List<PageData>	varList = rentalService.list(page);	//列出Rental列表
 		for(PageData data : varList){
 			data.put("INFO_CONTENT", HTMLSpirit.delHTMLTag((String)data.get("INFO_CONTENT")));
